@@ -13,7 +13,7 @@ This project also provides <b> At a Glance </b> information so that it is easier
 
 This program requires that you first convert the Restricted Cadet Report, give to you as a `.xlsx` into a `.csv`.  Dont worry, this is pretty easy
 
-![image](csvhowto.png)
+![image](cvshowto.png)
 
 Then click on `Save As` and choose a location you'll remember, you're going to need it.
 
