@@ -64,11 +64,11 @@ filename=""
 
 
 def printCompany(company):
-    print(company)
+
     returnString=""
     for i in range(len(company)):
         returnString=returnString+company[i]+"\n"
-        print(returnString)
+
     return returnString
 def addToCompany(row):
     if (row[8] == "A"):
@@ -101,7 +101,7 @@ def addToOffence(row):
     #print(offences)
     for i in range(len(offences)):
         #print(offences)
-        print(offences[i])
+
 
         if(offences[i][0]=="1"):
                 classone.append(row)
@@ -256,8 +256,7 @@ for row in rows[:62]:
     addToClass(row)
     addToOffence(row)
 
-print(commonOffences(allOffences))
-print(classone)
+
 
     #f.write(editString+"\n")
 f.write("---At a Glace ---\n")

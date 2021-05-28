@@ -7,3 +7,26 @@ This project quickly parses through restricted cadet information and outputs rea
 
 This project also provides <b> At a Glance </b> information so that it is easier to keep track of analytical trends regarding Cadet Conduct through out the course of this semester.  This data can help inform C-DIV and Cadet Leadership on areas to improve, as well as provides a baseline as to whether or not conduct is increasing or decreasing over time.
 
+## How do I use this?
+
+### Get the CSV
+
+This program requires that you first convert the Restricted Cadet Report, give to you as a `.xlsx` into a `.csv`.  Dont worry, this is pretty easy
+
+![image](csvhowto.png)
+
+Then click on `Save As` and choose a location you'll remember, you're going to need it.
+
+
+### Running the file
+
+![image](guipic.png)
+
+Click on the `Get File` button.  This will bring up a file prompt, select the CSV you just created.
+
+Then click on compute!
+
+
+A text file will be generated in the same directory that you ran the `.exe` from.  
+
+Enjoy your free time :+1:
