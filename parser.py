@@ -1,8 +1,46 @@
 import csv
 import datetime
 from collections import Counter
+import tkinter as tk     # from tkinter import Tk for Python 3.x
+from tkinter.filedialog import askopenfilename
+
+def getFile():
+    global filename
+    filename=tk.filedialog.askopenfilename()
+
+window = tk.Tk()# we don't want a full GUI, so keep the root window from appearing
+
+
+window.geometry("300x300")
+label = tk.Label(
+    text="RCRParser - Noah Soto",
+    foreground="white",  # Set the text color to white
+    background="black"  # Set the background color to black
+)
+
+button = tk.Button(
+    text="Compute me - please use a CSV, not an XLSX!",
+    bg="orange",
+    fg="blue",
+    command=lambda:(window.destroy())
+)
+button2 = tk.Button(
+    text="Get File(Please use a CSV Excel Docs will not work)",
+    bg="blue",
+    fg="orange",
+    command=lambda:(getFile())
+)
+
+
+label.pack()
+
+button2.pack()
+button.pack()
+window.mainloop()
+
 
 #Possible Addition
+
 
 alfa=[]
 bravo=[]
@@ -21,11 +59,16 @@ firstie=[]
 allOffences=[]
 classone=[]
 classtwo=[]
+filename=""
+
+
 
 def printCompany(company):
+    print(company)
     returnString=""
     for i in range(len(company)):
         returnString=returnString+company[i]+"\n"
+        print(returnString)
     return returnString
 def addToCompany(row):
     if (row[8] == "A"):
@@ -250,4 +293,3 @@ f.write("-----HOTEL ("+str(len(hotel))+")-----\n")
 f.write(printCompany(hotel))
 f.write("--------------\n")
 f.write("Total Offence count:  " + str(allTheOffences(allOffences)))
-
