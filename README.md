@@ -29,4 +29,4 @@ Then click on compute!
 
 A text file will be generated in the same directory that you ran the `.exe` from.  
 
-Enjoy your free time :+1:
+You may be prompted by Windows asking how you want to open the file, something like notepad, word, or even your web browser will suffice 
