@@ -1,5 +1,6 @@
 import csv
 import datetime
+import re
 from collections import Counter
 import tkinter as tk     # from tkinter import Tk for Python 3.x
 from tkinter.filedialog import askopenfilename
@@ -249,8 +250,13 @@ while(True):
          #Easy $$$$
 
 
+        sampleCadet=row[9]
+        testCadet=sampleCadet.split(',')
+        p=re.compile('[1-4]') # search for class using regex
+        year=p.findall(sampleCadet) # will give a class
+        #testCadet[0] = last name
 
-        editString=theFinalFirstDate+" to "+theFinalFinalDate+" for "+row[9]
+        editString=year[0]+"/c "+testCadet[1][1]+"-"+testCadet[0] + " " + theFinalFinalDate
         editString=editString.replace(")","")
         #print(editString)
         #print(row[5])
